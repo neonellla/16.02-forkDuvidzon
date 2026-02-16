@@ -8,6 +8,19 @@ function App() {
 
   return (
     <>
+      <div style={{ width: '400px', height: '400px', border: '1px solid black', margin: '20px 0' }}>
+  <svg width="400" height="400">
+    {/* Верхний узел */}
+    <circle cx="200" cy="50" r="20" fill="lightblue" stroke="black" />
+    {/* Линии */}
+    <line x1="200" y1="70" x2="100" y2="150" stroke="black" />
+    <line x1="200" y1="70" x2="300" y2="150" stroke="black" />
+    {/* Левые листья */}
+    <circle cx="100" cy="150" r="20" fill="lightgreen" stroke="black" />
+    {/* Правые листья */}
+    <circle cx="300" cy="150" r="20" fill="lightgreen" stroke="black" />
+  </svg>
+</div>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
